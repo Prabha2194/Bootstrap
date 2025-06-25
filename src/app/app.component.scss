@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 2rem;
+  }
+  
+  .booking-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    justify-content: center;
+  }
+  
+  .booking-box {
+    flex: 1 1 150px;
+    min-width: 140px;
+  }
+  
+  .booking-box input {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+  }
+  
+  .search-box button {
+    background-color: #007bff;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+  }
+  
+  .search-box button:hover {
+    background-color: #0056b3;
+  }
+  .backgroundImage{
+    background-image: url("../assets/images/seaside-scenery-coconut-trees-hammocks-blue-sea-sky-aircraft-beach-1080P-wallpaper.jpg");
+    background-repeat: no-repeat;
+  }
+  

@@ -1,1 +1,196 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --accent: #23b35d;
+  }
+  
+  body.dark {
+    --bg: #121212;
+    --text: #f0f0f0;
+    --accent: #20b42a;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: var(--bg);
+    border: 16px solid #62b27a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--accent);
+    width: auto;
+    height: 71px;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: var(--accent);
+  }
+  
+  .toggle-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem
+  }
+  
+  #theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      right: 2rem;
+      background: var(--bg);
+      border: 1px solid #ccc;
+      padding: 1rem;
+    }
+  
+    .nav.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: block;
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+  }
+  
+  .booking-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 42rem;
+    justify-content: center;
+  }
+  
+  .booking-box {
+    flex: 1 1 150px;
+    min-width: 140px;
+  }
+  
+  .booking-box input {
+    width: 100%;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 0.95rem;
+  }
+  
+  .search-box button {
+    background-color: #62b27a;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+   // left: 600px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .search-box button:hover {
+    background-color: #0056b3;
+  }
+  footer {
+    background-color: #62b27a;
+    color: white;
+    padding: 5px 0;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+
+  footer a {
+    color: #e3ece5;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  footer a:hover {
+    color: #e9f1ea;
+  }
+
+  .footer-icons {
+    margin-top: 10px;
+  }
+
+  .footer-icons a {
+    font-size: 20px;
+  }
+
+  .footer-legal {
+    margin-top: 15px;
+    font-size: 14px;
+  }
+  .backgroundImage{
+    background-image: url("../src/assets/images/dashboard-637932970125685129.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+  height: auto;
+  max-width: 100%;
+  display: block;
+  }
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 70vh;
+  }
+  
+  .content {
+    flex: 1;
+  }
+  
